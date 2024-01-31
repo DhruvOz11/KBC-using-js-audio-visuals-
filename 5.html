@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Question Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="a.css">
+</head>
+
+<body
+style=" background: url(ezgif-3-a5dddf6330.gif); background-repeat: no-repeat; background-size: cover;">
+
+<audio id="audioCorrect">
+    <source src="R.mp3">
+</audio>
+<audio id="audioIncorrect">
+    <source src="w.mp3">
+</audio>
+<audio id="qa5">
+    <source src="q5.mp3">
+</audio>
+
+<nav class="navbar">
+    <!-- Other navbar content -->
+    <div class="answer">Life-Lines</div>
+    <div class="lifeline" id="lifeline1">50:50</div>
+    <div class="lifeline" id="lifeline2">Google</div>
+    <div class="lifeline" id="lifeline3">Expert's Choice</div>
+    <div class="answer">
+        <p style="display:inline" id="ans"></p>
+    </div>
+</nav>
+<aside class="sidebar">
+    <div class="box">
+        <div class="name">Player: <p id="player", style="display: inline;"></p></div>
+        <div
+            style="color: rgb(0, 0, 0);background-color: gold; border-radius: 9px; font-size: larger;font-weight: 500;">
+            Total Winnings:</div>
+        <div class="item">₹1,00,00,000/-</div>
+        <div class="item">₹75,00,000/-</div>
+        <div class="item">₹50,00,000/-</div>
+        <div class="item">₹25,00,000/-</div>
+        <div class="item">₹12,40,000/-</div>
+        <div class="item" style="background-color: gold; color: black;">₹4,00,000/-</div>
+        <div class="item">₹1,00,000/-</div>
+        <div class="item" >₹5,000/-</div>
+        <div class="item">₹2,000/-</div>
+        <div class="item">₹1,000/-</div>
+    </div>
+</aside>
+
+<div class="container" style="margin-top: -16vh;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="question-box">
+                    <p id="que1" style="font-weight: 600; font-size: 22px;">The term "Kali-Pili" refers to which of these in city of Mumbai?</p>
+                    <div class="options">
+                        <div id="option1" class="option" data-answer="A" onclick="selectOption(this)">
+                            <p style="color: gold; display: inline;">A:</p> 
+                            <p id="op1" style="color: white; display: inline;"> Bus  </p>
+                        </div>
+                        <div id="option2" class="option" data-answer="B" onclick="selectOption(this)">
+                            <p style="color: gold; display: inline;">B:</p> 
+                            <p id="op2" style="color: white; display: inline;"> Taxi  </p>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <div id="option3" class="option" data-answer="C" onclick="selectOption(this)">
+                            <p style="color: gold; display: inline;">C:</p> 
+                            <p id="op3" style="color: white; display: inline;"> Train </p>
+                            
+
+                        </div>
+                        <div id="option4" class="option" data-answer="D" onclick="selectOption(this)">
+                            <p style="color: gold; display: inline;">D:</p> 
+                            <p id="op4" style="color: white; display: inline;"> Ferry  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="5.js"></script>
+    <script src="count.js"></script>
+    
+    <script>
+        function selectOption(option) {
+            var options = document.querySelectorAll('.option-box');
+            options.forEach(function (opt) {
+                opt.classList.remove('selected');
+            });
+            option.classList.add('selected');
+        }
+    </script>
+
+</body>
+
+</html>

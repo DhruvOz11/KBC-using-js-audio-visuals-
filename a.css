@@ -1,0 +1,40 @@
+.sidebar {
+    width: 200px; /* Adjust width as needed */
+    background-color: goldenrod; /* Background color of sidebar */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.box {
+    background-color: rgb(23, 0, 100); /* Background color of sidebar */
+    padding: 10px;
+    border: 1px solid #ccc; /* Border around box */
+    border-radius: 5px; /* Rounded corners */
+    border-radius: 8px;
+}
+
+.item {
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: lightgreen;
+    font-weight: 700;
+    font-size: larger;
+    border-radius: 8px;
+}
+.name {
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 7px;
+    background-color: gray;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: white;
+    font-weight: 700;
+}
+
+.item:hover {
+    background-color: rgba(130, 112, 10, 0.64);
+    color: white;
+    border-radius: 11px;
+}
